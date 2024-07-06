@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-1</title>
+
+    <style>
+        #updateBtn {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="column form-column">
+        <h2>Form</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required onkeyup="checkAndValidate()"><br><br>
+            <p id="emailError"></p>
+
+            <label for="age"> Age</label>
+            <input type="text" id="age" name="age" required><br><br>
+            <p id="ageError"></p>
+
+            <button type="button" onclick="createUser()" id="createBtn"> Submit </button>
+            <button type="button" onclick="updateUser()" id="updateBtn"> Update </button>
+        </form>
+    </div>
+
+    <div class="column table-column">
+        <h2>Table</h2>
+        <table border="1" style="width: 50%;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        var users = JSON.parse(localStorage.getItem('users'))
+        if (users === null) {
+            users = [];
+        }
+        function createUser() {
+            var user = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                age: document.getElementById("age").value
+            }
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+            if (emailPattern.test(user.email)) {
+                users.push(user);
+                localStorage.setItem('users', JSON.stringify(users));
+                readUser();
+                clearForm();
+                document.getElementById("emailError").innerHTML = "";
+            }
+            else{
+                document.getElementById("emailError").style.color = "red";
+                document.getElementById("emailError").innerHTML = "Please enter Valid Email ID ";
+                
+            }
+            // var agePattern = /^[0-99]$/
+            // if(agePattern.test(user.age)) {
+            //     users.push(user);
+            //     localStorage.setItem('users', JSON.stringify(users));
+            //     readUser();
+            //     clearForm();
+            //     document.getElementById("ageError").innerHTML = "";
+            // }
+            // else{
+            //     document.getElementById("ageError").style.color = "red";
+            //     document.getElementById("ageError").innerHTML = "Please enter Valid Age ";
+            // }
+
+        };
+        function clearForm() {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("age").value = "";
+
+        }
+        function readUser() {
+            document.querySelector("tbody").innerHTML = ""
+            users.forEach((usr, i) => {
+                var myTr = document.createElement("tr");
+                for (a in usr) {
+                    var myTd = document.createElement("td");
+                    myTd.innerHTML = usr[a]
+                    myTr.appendChild(myTd);
+                }
+                // Edit Button
+                var edittd = document.createElement("td");
+                var editButton = document.createElement("button");
+                editButton.setAttribute("onclick", "editUser(" + i + ")");
+                editButton.innerHTML = "Edit User"
+                edittd.appendChild(editButton);
+                // Delete Button
+                var deletetd = document.createElement("td");
+                var deleteButton = document.createElement("button");
+                deleteButton.setAttribute("onclick", "deleteUser(" + i + ")");
+                deleteButton.innerHTML = "Delete User"
+                deletetd.appendChild(deleteButton);
+
+                myTr.appendChild(edittd);
+                myTr.appendChild(deletetd);
+
+                document.querySelector("tbody").appendChild(myTr)
+            })
+        };
+
+        var index
+        function editUser(i) {
+            index = i;
+            var userTobeEdit = users[i];
+            for (a in userTobeEdit) {
+                document.getElementById(a).value = userTobeEdit[a]
+            }
+
+            document.getElementById("updateBtn").style.display = "block";
+            document.getElementById("createBtn").style.display = "none";
+        }
+        function updateUser() {
+            var user = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                age: document.getElementById("age").value
+            }
+
+            users[index] = user;
+            localStorage.setItem('users', JSON.stringify(users));
+            readUser();
+            clearForm();
+
+            document.getElementById("createBtn").style.display = "block";
+            document.getElementById("updateBtn").style.display = "none";
+        };
+        function deleteUser(i) {
+            console.log("deleteUser Called...!!", i);
+            users.splice(i, 1);
+            localStorage.setItem('users', JSON.stringify(users));
+            readUser();
+            clearForm();
+        };
+
+        function checkAndValidate(){
+            var userEntereEmail = document.getElementById("email").value;
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+            if(emailPattern.test(userEntereEmail)){
+                document.getElementById("createBtn").removeAttribute("disabled")
+            }else{
+                document.getElementById("createBtn").setAttribute("disabled",true)
+            }
+        }
+
+        // function checkAndValidateAge(){
+        //     var userEnterAge = document.getElementById("age").value;
+        //     var agePattern = /[0-9]$/
+        //     if(agePattern.test(userEnterAge)){
+        //         document.getElementById("createBtn").removeAttribute("disabled")
+        //     }else{
+        //         document.getElementById("createBtn").setAttribute("disabled",true)
+        //     }
+        // }
+
+        readUsers();
+
+    </script>
+</body>
+
+</html>
