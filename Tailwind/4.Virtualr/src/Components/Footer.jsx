@@ -28,12 +28,7 @@ const Footer = () => {
                     <ul className="space-y-2">
                         {communityLinks.map((link, index) => (
                             <li key={index}>
-                                <a
-                                    href={link.href}
-                                    className="text-neutral-300 hover:text-white"
-                                >
-                                    {link.text}
-                                </a>
+                                <a href={link.href} className="text-neutral-300 hover:text-white">{link.text}</a>
                             </li>
                         ))}
                     </ul>
