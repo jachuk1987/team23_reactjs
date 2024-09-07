@@ -29,7 +29,7 @@ const FeatureSection = () => {
                             </div>
                         </div>
                     </div>
-                ))}
+                ))};
             </div>
         </div>
     );
