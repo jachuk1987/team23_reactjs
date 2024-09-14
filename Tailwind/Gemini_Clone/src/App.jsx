@@ -5,8 +5,8 @@ import Main from "./Components/Main/Main";
 const App = () => {
   return (
     <>
-      <SideBar />
-      <Main />
+      <SideBar/>
+      <Main/>
     </>
   )
 }
