@@ -1,11 +1,12 @@
 import React from "react";
+import Rooms from "../Components/Rooms";
 
 const Home = () => {
     return (
-        <div>
-            Home
-        </div>
+        <>
+            <Rooms />
+        </>
     )
-};
+}
 
 export default Home;

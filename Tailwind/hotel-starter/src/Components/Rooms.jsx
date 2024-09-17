@@ -10,7 +10,6 @@ const Rooms = () => {
                 {/*grid*/}
                 <div>
                     {rooms.map((room) => {
-                        console.log(room);
                         return <Room room={room} key={room.id} />
                     })}
                 </div>
