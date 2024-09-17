@@ -1,4 +1,4 @@
-import React, { useContext } from "..react";
+import React, { useContext } from "react";
 import { RoomContext } from "./Context/RoomContext";
 import Room from './Room';
 
