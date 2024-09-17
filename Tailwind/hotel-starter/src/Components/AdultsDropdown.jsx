@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AdultsDropdown = () => {
+const AdultsDropDown = () => {
   return (
     <div>
-        AdultsDropdown
+        AdultsDropDown
     </div>
   )
 };
 
-export default AdultsDropdown;
+export default AdultsDropDown;
