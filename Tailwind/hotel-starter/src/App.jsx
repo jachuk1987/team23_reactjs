@@ -3,9 +3,9 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import RoomDetails from './Pages/RoomDetails';
-import { createBrowserRoute, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-const router = createBrowserRoute([
+const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />
