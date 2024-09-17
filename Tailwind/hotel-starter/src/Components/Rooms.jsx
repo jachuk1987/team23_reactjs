@@ -1,5 +1,5 @@
-import React, { useContext } from "react";
-import { RoomContext } from "../Context/RoomContext";
+import React, { useContext } from "..react";
+import { RoomContext } from "./Context/RoomContext";
 import Room from './Room';
 
 const Rooms = () => {

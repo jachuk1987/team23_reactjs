@@ -1,6 +1,8 @@
-import React from 'react';
+import React from '..react';
+import { Link } from '..react-router-dom';
+import {BsArrowsFullscreen, BsPeople} from "react-icons/bs";
 
-const Room = () => {
+const Room = ({ room }) => {
   return <div>Room</div>;
 };
 
