@@ -62,23 +62,35 @@ const RoomDetails = () => {
                     </div>
                     {/* right */}
                     <div className="w-full h-full lg:w-[40%] bg-blue-300">
-                        {/* reservation */ }
+                        {/* reservation */}
                         <div className="py-8 px-6 bg-accent/20 mb-12">
                             <div className="flex flex-col space-y-4 mb-4">
                                 <h3>Your Reservation</h3>
-                                <div>
-                                    <CheckIn/>
+                                <div className="h-[60px]">
+                                    <CheckIn />
                                 </div>
-                                <div>
-                                    <CheckOut/>
+                                <div className="h-[60px]">
+                                    <CheckOut />
                                 </div>
-                                <div>
-                                    <AdultsDropDown/>
+                                <div className="h-[60px]">
+                                    <AdultsDropDown />
                                 </div>
-                                <div>
-                                    <KidsDropDown/>
+                                <div className="h-[60px]">
+                                    <KidsDropDown />
                                 </div>
+                                <button className="btn btn-lg btn-primary w-full">
+                                    Book now for ${price}
+                                </button>
                             </div>
+                        </div>
+                        {/* rules */}
+                        <div>
+                            <h3 className="h3">Hotel Rules</h3>
+                            <p className="mb-6">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                nihil
+                                nulla itaque laboriosam.
+                            </p>
                         </div>
                     </div>
                 </div>
