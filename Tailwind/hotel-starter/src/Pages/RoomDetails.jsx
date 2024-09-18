@@ -20,8 +20,32 @@ const RoomDetails = () => {
     return (
         <section className="bg-pink-200">
             {/* banner */}
-            <div className="bg-room bg-cover h-[560px]"></div>
-            RoomDetails
+            <div className="bg-room bg-cover bg-center h-[560px] relative flex
+            justify-center items-center">
+                {/* overlay */}
+                <div className="absolute w-full h-full bg-black/70"></div>
+                {/* title */}
+                <h1 className="text-6x1 text-white z-20 font-primary text-center">{name} Details</h1>
+            </div>
+            <div className="container mx-auto">
+                <div className="flex flex-col lg:flex-row h-full py-24">
+                    {/* Left */}
+                    <div className="w-full h-full lg:w-[60%] bg-yellow-300" >
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. atque
+                        error corrupti, ratione nemo dolor, magni blanditiis dicta
+                        aliquid
+                        totam libero odit dolorem, natus provident ipsam fugiat autem.
+                        Eum,
+                        laudantium consectetur?
+                    </div>
+                    {/* right */}
+                    <div className="w-full h-full lg:w-[40%] bg-blue-300">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. atque
+                        error corrupti, ratione nemo dolor, magni blanditiis dicta
+                        aliquid
+                    </div>
+                </div>
+            </div>
         </section>
     )
 };
