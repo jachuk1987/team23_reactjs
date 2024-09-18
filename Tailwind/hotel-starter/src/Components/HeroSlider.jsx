@@ -1,8 +1,8 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/effect-fade";
-import { EffectFade, Autoplay } from "swiper";
+import { Autoplay, EffectFade } from 'swiper';
 import Img1 from "../assets/img/heroslider/1.jpg";
 import Img2 from "../assets/img/heroslider/2.jpg";
 import Img3 from "../assets/img/heroslider/3.jpg";
@@ -26,7 +26,7 @@ const slides = [
 ];
 const HeroSlider = () => {
     return (
-        <Swiper modules={[EffectFade, Autoplay]} effect={'fade'} loop={true}
+        <Swiper modules={[EffectFade, Autoplay]} effect={'fade'} Loop={true}
         autoplay={{
             delay:3000,
             disableOnInteraction:false,
