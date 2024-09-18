@@ -18,7 +18,7 @@ const RoomDetails = () => {
 
     const {name, description, facilities, imageLg, price } = room;
     return (
-        <section className="bg-pink-200">
+        <section>
             {/* banner */}
             <div className="bg-room bg-cover bg-center h-[560px] relative flex
             justify-center items-center">
@@ -30,13 +30,8 @@ const RoomDetails = () => {
             <div className="container mx-auto">
                 <div className="flex flex-col lg:flex-row h-full py-24">
                     {/* Left */}
-                    <div className="w-full h-full lg:w-[60%] bg-yellow-300" >
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. atque
-                        error corrupti, ratione nemo dolor, magni blanditiis dicta
-                        aliquid
-                        totam libero odit dolorem, natus provident ipsam fugiat autem.
-                        Eum,
-                        laudantium consectetur?
+                    <div className="w-full h-full lg:w-[60%] px-6 bg-yellow-300" >
+                        
                     </div>
                     {/* right */}
                     <div className="w-full h-full lg:w-[40%] bg-blue-300">
