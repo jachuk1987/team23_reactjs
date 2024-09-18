@@ -19,6 +19,7 @@ const RoomDetails = () => {
     const { name, description, facilities, imageLg, price } = room;
     return (
         <section>
+            <ScrollToTop />
             {/* banner */}
             <div className="bg-room bg-cover bg-center h-[560px] relative flex
             justify-center items-center">
@@ -91,6 +92,24 @@ const RoomDetails = () => {
                                 nihil
                                 nulla itaque laboriosam.
                             </p>
+                            <ul className="flex flex-col gap-y-4">
+                                <li className="flex items-center gap-x-4">
+                                    <FaCheck className="text-accent" />
+                                    Check-in: 3:00 PM - 9:00 PM
+                                </li>
+                                <li className="flex items-center gap-x-4">
+                                    <FaCheck className="text-accent" />
+                                    Check-out: 10:30 AM
+                                </li>
+                                <li className="flex items-center gap-x-4">
+                                    <FaCheck className="text-accent" />
+                                    No Pets Allowed
+                                </li>
+                                <li className="flex items-center gap-x-4">
+                                    <FaCheck className="text-accent" />
+                                    No Smoking
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
