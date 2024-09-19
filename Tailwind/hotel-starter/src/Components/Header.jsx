@@ -14,7 +14,7 @@ const Header = () => {
             <div className="container mx-auto flex flex-col items-centre gap-y-6 lg:flex-row lg:justify-between lg:gap-y-0">
                 {/* logo */}
                 <a href="">
-                    {header ? (<img className="w-[160px]" src={LogoDark}/>) : ( <img className="w-[160px]" src={Logowhite}/> )}
+                    {header ? (<img className="w-[160px]" src={LogoDark} />) : (<img className="w-[160px]" src={Logowhite} />)}
                 </a>
                 {/* nav */}
                 <nav className={`${header ? `text-primary` : `text-white`} flex gap-x-4 font-tertiary 
@@ -34,7 +34,7 @@ const Header = () => {
                     <a href="" className="hover:text-accent transition">
                         Contact
                     </a>
-                    </nav>
+                </nav>
             </div>
         </header>
     );
