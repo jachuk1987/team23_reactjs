@@ -27,13 +27,13 @@ const slides = [
 const HeroSlider = () => {
     return (
         <Swiper modules={[EffectFade, Autoplay]} effect={'fade'} loop={true}
-        autoplay={{
-            delay:3000,
-            disableOnInteraction: false,
-        }}
-        className="heroSlider h-[600px] lg:h-[860px]">
+            autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+            }}
+            className="heroSlider h-[600px] lg:h-[860px]">
             {slides.map((slide, index) => {
-                const {title, bg, btnText } = slide;
+                const { title, bg, btnText } = slide;
                 return (
                     <SwiperSlide className="h-full relative flex justify-center
                     items-center" key={index}>
