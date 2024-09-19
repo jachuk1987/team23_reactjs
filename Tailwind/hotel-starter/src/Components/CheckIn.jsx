@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "../datepicker.css"
-import {BsCalendar} from "react-icons/bs"
+import { BsCalendar } from "react-icons/bs"
 
 const CheckIn = () => {
     const [startDate, setStartDate] = useState(false);
@@ -11,13 +11,13 @@ const CheckIn = () => {
             {/* icon */}
             <div className='absolute z-10 pr-8'>
                 <div>
-                    <BsCalendar className='text-accent text-base'/>
+                    <BsCalendar className='text-accent text-base' />
                 </div>
             </div>
-            <DatePicker className='w-full h-full' selected={startDate} 
-            placeholderText='Check in'onChange={(date) =>setStartDate(date)}/>
+            <DatePicker className='w-full h-full' selected={startDate}
+                placeholderText='Check in' onChange={(date) => setStartDate(date)} />
         </div>
-    )
-}
+    );
+};
 
 export default CheckIn;
