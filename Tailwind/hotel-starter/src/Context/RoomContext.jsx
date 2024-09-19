@@ -26,7 +26,7 @@ const RoomProvider = ({ children }) => {
             setRooms(newRooms);
             setLoading(false);
         }, 3000);
-        
+
     };
 
     return (
