@@ -17,7 +17,7 @@ const CheckOut = () => {
             <DatePicker className='w-full h-full' selected={endDate} 
             placeholderText='Check out'onChange={(date) =>setEndDate(date)}/>
         </div>
-    );
+    )
 };
 
 export default CheckOut;
