@@ -115,7 +115,7 @@ const RoomDetails = () => {
                 </div>
             </div>
         </section>
-    );
+    )
 };
 
 export default RoomDetails;
