@@ -52,7 +52,7 @@ const HeroSlider = () => {
                 )
             })}
         </Swiper>
-    );
+    )
 };
 
 export default HeroSlider;
