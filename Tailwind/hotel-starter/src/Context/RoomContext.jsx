@@ -33,7 +33,7 @@ const RoomProvider = ({ children }) => {
         <RoomContext.Provider value={{ rooms, adults, setAdults, kids, setKids, handleClick, loading }}>
             {children}
         </RoomContext.Provider>
-    )
+    );
 };
 
 export default RoomProvider;
