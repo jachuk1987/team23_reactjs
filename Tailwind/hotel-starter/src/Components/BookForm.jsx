@@ -29,7 +29,7 @@ const BookForm = () => {
             </div>
 
         </form>
-    )
+    );
 };
 
 export default BookForm;
