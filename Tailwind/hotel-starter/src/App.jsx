@@ -23,7 +23,7 @@ const App = () => {
       <RouterProvider router={router} />
       <Footer />
     </div>
-  )
+  );
 };
 
 export default App;
