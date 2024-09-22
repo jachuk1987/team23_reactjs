@@ -28,7 +28,7 @@ const Rooms = () => {
                 </div>
             </div>
         </section>
-    );
+    )
 };
 
 export default Rooms;
