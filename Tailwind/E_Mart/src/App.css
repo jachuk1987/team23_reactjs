@@ -7,6 +7,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-color: aliceblue;
+}
+
 .navSection{
   border: 1px solid black;
   display: flex;
@@ -17,6 +21,7 @@
 
 .proSection{
   display: flex;
+  background-color: white;
 }
 
 .imgBox{
@@ -26,4 +31,8 @@
 
 .proImage {
   width: 80%;
+}
+
+.proTitle h2 {
+  margin: 10px;
 }
