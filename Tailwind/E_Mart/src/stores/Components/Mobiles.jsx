@@ -2,13 +2,16 @@ import React from "react";
 import { mobileData } from "../data/mobiles";
 
 const Mobiles = () => {
+
+    const firstFiveImages = mobileData.slice(0,5)
+    
     return (
-        <div>
+        <div className="proSection">
             {
                 mobileData.map((item) => {
                     return (
-                        <div>
-                            <img src={item.image} alt="" />
+                        <div className="imgBox">
+                            <img className="proImage" src={item.image} alt="" />
                         </div>
                     )
                 })
