@@ -3,12 +3,14 @@ import { mobileData } from "../data/mobiles";
 
 const Mobiles = () => {
 
-    const firstFiveImages = mobileData.slice(0,5)
-    
+    const firstFiveImages = mobileData.slice(0, 5)
+
     return (
+        <>
+        <h2>Mobiles</h2>
         <div className="proSection">
             {
-                mobileData.map((item) => {
+                firstFiveImages.map((item) => {
                     return (
                         <div className="imgBox">
                             <img className="proImage" src={item.image} alt="" />
@@ -17,6 +19,7 @@ const Mobiles = () => {
                 })
             }
         </div>
+        </>
     )
 }
 
