@@ -1,8 +1,11 @@
 import React from "react";
+import Mobiles from "./Mobiles";
 
 const Products = () => {
     return (
-        <div> Products </div>
+        <div>
+            <Mobiles />
+        </div>
     )
 }
 
