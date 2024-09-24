@@ -23,6 +23,13 @@ body {
   padding: 0px 50px;
 }
 
+.user {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .proSection{
   display: flex;
   background-color: white;
@@ -57,3 +64,16 @@ body {
   display: inline-flex;
 }
 
+.pageSection {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+}
+
+.pageImg {
+  width: 250px;
+  height: 250px;
+}
+
+.pageImg img {
+  width: 100%;
+}
