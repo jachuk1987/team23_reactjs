@@ -4,6 +4,8 @@ import Computers from "./Computer";
 import Men from "./Men";
 import Woman from "./Woman";
 import Watch from "./Watch";
+import AC from "./AC";
+import Furnitures from "./Furnitures";
 
 const Products = () => {
     return (
@@ -13,6 +15,8 @@ const Products = () => {
             <Men />
             <Woman />
             <Watch />
+            <AC />
+            <Furnitures/>
         </div>
     )
 }
