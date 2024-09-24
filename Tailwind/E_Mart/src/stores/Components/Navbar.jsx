@@ -2,6 +2,7 @@ import React from "react";
 
 const Navbar = () => {
     return (
+       <>
         <div className="navSection">
             <div className="title">
                  <h2>E-Mart</h2>
@@ -13,11 +14,22 @@ const Navbar = () => {
                 <div className="user-details">
                     SignIn/SignUp
                 </div>
-                <div className="cart">
-                    Cart
-                </div>
+                <div className="cart"> Cart </div>
             </div>
         </div>
+        <div className="subMenu">
+            <ul>
+                <li>Mobiles</li>
+                <li>Computers</li>
+                <li>Men Fashion</li>
+                <li>Woman Dressing</li>
+                <li>Watches</li>
+                <li>Furniture</li>
+                <li>AC</li>
+                <li>Kitchen</li>
+            </ul>
+        </div>
+       </>
     )
 }
 
