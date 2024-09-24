@@ -50,3 +50,7 @@ body {
   height: 50px;
 }
 
+.subMenu ul {
+  display: inline-flex;
+}
+

@@ -21,8 +21,8 @@ const Navbar = () => {
             <ul>
                 <li>Mobiles</li>
                 <li>Computers</li>
-                <li>Men Fashion</li>
-                <li>Woman Dressing</li>
+                <li>Mens Wear</li>
+                <li>Woman Wear</li>
                 <li>Watches</li>
                 <li>Furniture</li>
                 <li>AC</li>
