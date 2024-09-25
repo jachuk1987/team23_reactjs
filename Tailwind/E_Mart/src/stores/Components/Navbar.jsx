@@ -33,11 +33,14 @@ const Navbar = () => {
                         <li>Mens Wear</li>
                     </Link>
 
+                    <Link to={'/woman'}>
+                        <li>Woman Wear</li>
+                    </Link>
+
                     <Link to={'/ac'}>
                         <li>AC</li>
                     </Link>
-
-                    <li>Woman Wear</li>
+                    
                     <li>Watches</li>
                     <li>Furniture</li>
                     <li>Kitchen</li>
