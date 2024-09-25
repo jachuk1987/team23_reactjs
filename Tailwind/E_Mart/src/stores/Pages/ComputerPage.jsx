@@ -63,4 +63,6 @@ const ComputerPage = () => {
             </div>
         </>
     )
-}
+};
+
+export default ComputerPage;
