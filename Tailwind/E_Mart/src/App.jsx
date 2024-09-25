@@ -9,6 +9,9 @@ import ComputerPage from "./stores/Pages/ComputerPage";
 import MenPage from "./stores/Pages/MenPage";
 import WomanPage from "./stores/Pages/WomanPage";
 import WatchPage from "./stores/Pages/WatchPage";
+import AcPage from "./stores/Pages/AcPage";
+import FurniturePage from "./stores/Pages/FurniturePage";
+import FridgePage from "./stores/Pages/FridgePage";
 
 const App = () => {
   return (
@@ -21,7 +24,9 @@ const App = () => {
         <Route path="/men" element = { <MenPage /> }/>
         <Route path="/woman" element = { <WomanPage/> }/>
         <Route path="/watch" element = { <WatchPage/> }/>
-        <Route path="/ac" element = { < }/>
+        <Route path="/ac" element = { <AcPage /> }/>
+        <Route path="/furniture" element = { <FurniturePage />}/>
+        <Route path="/fridge" element = { <FridgePage /> }/>
         
       </Routes>
     </div>
