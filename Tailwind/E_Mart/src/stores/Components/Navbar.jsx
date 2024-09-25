@@ -24,12 +24,22 @@ const Navbar = () => {
                     <Link to={'/mobiles'}>
                         <li>Mobiles</li>
                     </Link>
-                    <li>Computers</li>
-                    <li>Mens Wear</li>
+
+                    <Link to={'/computers'}>
+                        <li>Computers</li>
+                    </Link>
+
+                    <Link to={'/men'}>
+                        <li>Mens Wear</li>
+                    </Link>
+
+                    <Link to={'/ac'}>
+                        <li>AC</li>
+                    </Link>
+
                     <li>Woman Wear</li>
                     <li>Watches</li>
                     <li>Furniture</li>
-                    <li>AC</li>
                     <li>Kitchen</li>
                 </ul>
             </div>
