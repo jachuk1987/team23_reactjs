@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import { kitchenData } from '../data/kitchen'
-import Navbar from '../components/Navbar'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import { kitchenData } from '../data/kitchen';
+import Navbar from '../Components/Navbar';
+import { Link } from 'react-router-dom';
 
 const KitchenPage = () => {
 
