@@ -49,7 +49,19 @@ const Navbar = () => {
                         <li>Furniture</li>
                     </Link>
 
-                    <li>Kitchen</li>
+                    <Link to={'/'}>
+                        <li>Books</li>
+                    </Link>
+
+                    <Link to={'/fridge'}>
+                        <li>Refrigerator</li>
+                    </Link>
+
+                    <Link to={'/kitchen'}>
+                        <li>Kitchen</li>
+                    </Link>
+
+                
                 </ul>
             </div>
         </>
