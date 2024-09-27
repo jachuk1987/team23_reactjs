@@ -39,7 +39,7 @@ const UserCart = () => {
                 }
             </div>
         </>
-    )
-}
+    );
+};
 
 export default UserCart;
