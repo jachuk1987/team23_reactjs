@@ -13,6 +13,7 @@ import AcPage from "./stores/Pages/AcPage";
 import FurniturePage from "./stores/Pages/FurniturePage";
 import FridgePage from "./stores/Pages/FridgePage";
 import MobileSingle from "./stores/Singles/MobileSingle";
+import UserCart from "./stores/UserCart";
 
 const App = () => {
   return (
@@ -30,7 +31,7 @@ const App = () => {
         <Route path="/fridge" element={<FridgePage />} />
 
         <Route path='/mobiles/:id' element={<MobileSingle />} />
-        {/* <Route path='/cart' element={<UserCart />} /> */}
+        <Route path='/cart' element={<UserCart />} />
         {/* <Route path='/ac/:id' element={<AcSingle />} /> */}
         {/* <Route path='/computers/:id' element={<ComputerSingle />} /> */}
         {/* <Route path='/furniture/:id' element={<FurnitureSingle />} /> */}
