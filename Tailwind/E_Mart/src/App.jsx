@@ -12,6 +12,7 @@ import WatchPage from "./stores/Pages/WatchPage";
 import AcPage from "./stores/Pages/AcPage";
 import FurniturePage from "./stores/Pages/FurniturePage";
 import FridgePage from "./stores/Pages/FridgePage";
+import MobileSingle from "./stores/Singles/MobileSingle";
 
 const App = () => {
   return (
