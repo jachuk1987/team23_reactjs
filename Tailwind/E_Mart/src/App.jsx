@@ -44,7 +44,7 @@ const App = () => {
         <Route path='/kitchen/:id' element={<KitchenSingle />} />
         <Route path='/men/:id' element={<MenSingle />} />
         <Route path='/watch/:id' element={<WatchSingle />} />
-        <Route path='/woman/:id' element={<WomanSingle />} />
+        <Route path='/woman/:id' element={<WomanS />} />
         {/* <Route path='/fridge/:id' element={<FridgeSingle />} /> */}
       </Routes>
     </div>
