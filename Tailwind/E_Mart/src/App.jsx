@@ -17,6 +17,7 @@ import UserCart from "./stores/UserCart";
 import AcSingle from "./stores/Singles/AcSingle";
 import ComputerSingle from "./stores/Singles/ComputerSingle";
 import FurnitureSingle from "./stores/Singles/FurnitureSingle";
+import KitchenSingle from "./stores/Singles/KitchenSingle";
 
 const App = () => {
   return (
@@ -38,7 +39,7 @@ const App = () => {
         <Route path='/ac/:id' element={<AcSingle />} />
         <Route path='/computers/:id' element={<ComputerSingle />} />
         <Route path='/furniture/:id' element={<FurnitureSingle />} />
-        <Route path='/kitchen/:id' element={<KitchenSi />} />
+        <Route path='/kitchen/:id' element={<KitchenSingle />} />
         {/* <Route path='/men/:id' element={<MenSingle />} /> */}
         {/* <Route path='/watch/:id' element={<WatchSingle />} /> */}
         {/* <Route path='/woman/:id' element={<WomanSingle />} /> */}
