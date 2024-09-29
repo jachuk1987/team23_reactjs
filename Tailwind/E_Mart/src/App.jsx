@@ -16,6 +16,7 @@ import MobileSingle from "./stores/Singles/MobileSingle";
 import UserCart from "./stores/UserCart";
 import AcSingle from "./stores/Singles/AcSingle";
 import ComputerSingle from "./stores/Singles/ComputerSingle";
+import FurnitureSingle from "./stores/Singles/FurnitureSingle";
 
 const App = () => {
   return (
