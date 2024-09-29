@@ -38,7 +38,7 @@ const App = () => {
         <Route path='/ac/:id' element={<AcSingle />} />
         <Route path='/computers/:id' element={<ComputerSingle />} />
         <Route path='/furniture/:id' element={<FurnitureSingle />} />
-        <Route path='/kitchen/:id' element={<KitchenSingle />} />
+        <Route path='/kitchen/:id' element={<KitchenSi />} />
         {/* <Route path='/men/:id' element={<MenSingle />} /> */}
         {/* <Route path='/watch/:id' element={<WatchSingle />} /> */}
         {/* <Route path='/woman/:id' element={<WomanSingle />} /> */}
