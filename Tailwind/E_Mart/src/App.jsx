@@ -20,6 +20,7 @@ import FurnitureSingle from "./stores/Singles/FurnitureSingle";
 import KitchenSingle from "./stores/Singles/KitchenSingle";
 import MenSingle from "./stores/Singles/MenSingle";
 import WatchSingle from "./stores/Singles/WatchSingle";
+import WomanSingle from "./stores/Singles/WomanSingle";
 
 const App = () => {
   return (
@@ -44,7 +45,7 @@ const App = () => {
         <Route path='/kitchen/:id' element={<KitchenSingle />} />
         <Route path='/men/:id' element={<MenSingle />} />
         <Route path='/watch/:id' element={<WatchSingle />} />
-        <Route path='/woman/:id' element={<WomanSin />} />
+        <Route path='/woman/:id' element={<WomanSingle />} />
         {/* <Route path='/fridge/:id' element={<FridgeSingle />} /> */}
       </Routes>
     </div>
