@@ -42,7 +42,7 @@ const App = () => {
         <Route path='/furniture/:id' element={<FurnitureSingle />} />
         <Route path='/kitchen/:id' element={<KitchenSingle />} />
         <Route path='/men/:id' element={<MenSingle />} />
-        <Route path='/watch/:id' element={<WatchS />} />
+        <Route path='/watch/:id' element={<WatchSin />} />
         {/* <Route path='/woman/:id' element={<WomanSingle />} /> */}
         {/* <Route path='/fridge/:id' element={<FridgeSingle />} /> */}
       </Routes>
