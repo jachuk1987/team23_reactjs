@@ -16,6 +16,7 @@ import MobileSingle from "./stores/Singles/MobileSingle";
 import UserCart from "./stores/UserCart";
 import AcSingle from "./stores/Singles/AcSingle";
 import ComputerSingle from "./stores/Singles/ComputerSingle";
+import FridgeSingle from "./stores/Singles/FridgeSingle";
 import FurnitureSingle from "./stores/Singles/FurnitureSingle";
 import KitchenSingle from "./stores/Singles/KitchenSingle";
 import MenSingle from "./stores/Singles/MenSingle";
@@ -41,15 +42,15 @@ const App = () => {
         <Route path='/cart' element={<UserCart />} />
         <Route path='/ac/:id' element={<AcSingle />} />
         <Route path='/computers/:id' element={<ComputerSingle />} />
+        <Route path='/fridge/:id' element={<FridgeSingle />} />
         <Route path='/furniture/:id' element={<FurnitureSingle />} />
         <Route path='/kitchen/:id' element={<KitchenSingle />} />
         <Route path='/men/:id' element={<MenSingle />} />
         <Route path='/watch/:id' element={<WatchSingle />} />
         <Route path='/woman/:id' element={<WomanSingle />} />
-        <Route path='/fridge/:id' element={<FridgeSingle />} />
       </Routes>
     </div>
-  )
+  );
 }
 
 export default App;
