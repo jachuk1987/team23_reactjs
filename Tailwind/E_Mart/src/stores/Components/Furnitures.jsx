@@ -20,7 +20,7 @@ const Furnitures = () => {
             }
         </div>
         </>
-    )
+    );
 }
 
 export default Furnitures;
