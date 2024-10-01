@@ -50,7 +50,7 @@ const App = () => {
         <Route path='/woman/:id' element={<WomanSingle />} />
       </Routes>
     </div>
-  );
+  )
 }
 
 export default App;
