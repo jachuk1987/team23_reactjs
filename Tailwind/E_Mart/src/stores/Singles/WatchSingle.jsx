@@ -37,6 +37,7 @@ const WatchSingle = () => {
       </div>
     </>
   );
-};
+  
+}
 
 export default WatchSingle;
