@@ -36,7 +36,7 @@ const WomanSingle = () => {
         </div>
       </div>
     </>
-  );
+  )
 
 }
 
