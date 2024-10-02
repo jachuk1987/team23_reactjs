@@ -28,7 +28,7 @@ const Products = () => {
             <Speakers />
             <TV />
         </div>
-    )
+    );
 };
 
 export default Products;
