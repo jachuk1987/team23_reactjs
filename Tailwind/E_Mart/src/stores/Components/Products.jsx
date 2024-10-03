@@ -29,6 +29,6 @@ const Products = () => {
             <TV />
         </div>
     );
-};
+}
 
 export default Products;
