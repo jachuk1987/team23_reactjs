@@ -37,6 +37,6 @@ const WomanSingle = () => {
       </div>
     </>
   );
-};
+}
 
 export default WomanSingle;
