@@ -21,6 +21,6 @@ const AC = () => {
         </div>
         </>
     );
-};
+}
 
 export default AC;
