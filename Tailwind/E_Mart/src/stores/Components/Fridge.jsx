@@ -21,6 +21,6 @@ const Fridge = () => {
         </div>
         </>
     );
-};
+}
 
 export default Fridge;
