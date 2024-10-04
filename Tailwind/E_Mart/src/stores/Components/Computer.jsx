@@ -20,7 +20,7 @@ const Computers = () => {
             }
         </div>
         </>
-    );
+    )
 }
 
 export default Computers;
