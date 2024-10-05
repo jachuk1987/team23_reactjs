@@ -62,7 +62,7 @@ const ComputerPage = () => {
                 </div>
             </div>
         </>
-    )
+    );
 };
 
 export default ComputerPage;
