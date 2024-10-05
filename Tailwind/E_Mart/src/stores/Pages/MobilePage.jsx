@@ -15,7 +15,10 @@ const MobilePage = () => {
                     return(
                         <div>
                             <label >
+                                <input type="checkbox" 
+                                checked = {selectedProduct.includes(phone.company)}
                                 
+                                />
                             </label>
                         </div>
                     )
