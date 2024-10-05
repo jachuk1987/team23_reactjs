@@ -7,6 +7,15 @@ const MobilePage = () => {
 
     const [selectedProduct, setSelectedProduct] = useState([])
 
+    const companyHandler = (mango) => {
+        if(selectedProduct.includes(mango)){
+            setSelectedProduct(selectedProduct.filter(item => item !== mango))
+        }
+        else{
+            setSelectedProduct([mango])
+        }
+    }
+
     return (
         <>
             <Navbar />
@@ -17,7 +26,7 @@ const MobilePage = () => {
                             <label >
                                 <input type="checkbox" 
                                 checked = {selectedProduct.includes(phone.company)}
-                                
+                                onChange={()=>companyHandler(phone.company)}
                                 />
                             </label>
                         </div>
