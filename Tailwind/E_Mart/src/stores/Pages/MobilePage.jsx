@@ -14,7 +14,9 @@ const MobilePage = () => {
                 {mobileData.map((phone)=>{
                     return(
                         <div>
-                            
+                            <label >
+                                
+                            </label>
                         </div>
                     )
                 })}
