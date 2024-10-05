@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { computerData } from "../data/computers";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router-dom";

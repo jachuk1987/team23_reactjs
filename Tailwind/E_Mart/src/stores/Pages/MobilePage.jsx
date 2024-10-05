@@ -1,6 +1,7 @@
 import React from "react";
 import { mobileData } from "../data/mobiles";
 import Navbar from "../Components/Navbar";
+import { Link } from "react-router-dom";
 
 const MobilePage = () => {
     return (
@@ -10,9 +11,11 @@ const MobilePage = () => {
                 {mobileData.map((item) => {
                     return (
                         <div>
-                            <div className="pageImg">
-                                <img src={item.image} alt="" />
-                            </div>
+                            <Link to={`/mobiles/${item.id}`}>
+                                <div className="pageImg">
+                                    <img src={item.image} alt="" />
+                                </div>
+                            </Link>
                             <div className="proModel">
                                 {item.company}, {item.model}
                             </div>
