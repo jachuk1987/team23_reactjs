@@ -28,6 +28,7 @@ const MobilePage = () => {
                                 checked = {selectedProduct.includes(phone.company)}
                                 onChange={()=>companyHandler(phone.company)}
                                 />
+                                {phone.company}
                             </label>
                         </div>
                     )
