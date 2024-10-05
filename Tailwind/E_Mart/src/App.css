@@ -95,3 +95,9 @@ body {
 .ind-image img {
   width: 100%;
 }
+.ind-details {
+  padding: 20px;
+}
+.space {
+  margin: 10px;
+}
