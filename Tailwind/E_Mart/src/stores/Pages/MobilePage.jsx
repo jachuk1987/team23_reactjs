@@ -11,7 +11,13 @@ const MobilePage = () => {
         <>
             <Navbar />
             <div className="pro-selected">
-                {mobileData.map(())}
+                {mobileData.map((phone)=>{
+                    return(
+                        <div>
+                            
+                        </div>
+                    )
+                })}
             </div>
             <div className="pageSection">
                 {mobileData.map((item) => {
