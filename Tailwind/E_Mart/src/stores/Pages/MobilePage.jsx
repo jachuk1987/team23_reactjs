@@ -16,8 +16,8 @@ const MobilePage = () => {
         }
     }
 
-    const filteredProduct = selectedProduct.length===0?
-    mobileData : mobileData.filter((orange)=>selectedProduct.includes(orange.company))
+    const filteredProduct = selectedProduct.length === 0 ?
+        mobileData : mobileData.filter((orange) => selectedProduct.includes(orange.company))
 
     return (
         <>
