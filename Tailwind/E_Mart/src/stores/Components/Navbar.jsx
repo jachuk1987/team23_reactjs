@@ -16,7 +16,9 @@ const Navbar = () => {
                     <div className="user-details">
                         SignIn/SignUp
                     </div>
+                    <Link>
                     <div className="cart"> Cart </div>
+                    </Link> 
                 </div>
             </div>
             <div className="subMenu">
