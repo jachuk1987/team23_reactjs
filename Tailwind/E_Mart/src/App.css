@@ -117,3 +117,6 @@ body {
   width: 30%;
   border: 1px solid black;
 }
+.pro-input input {
+  margin: 5px;
+}
