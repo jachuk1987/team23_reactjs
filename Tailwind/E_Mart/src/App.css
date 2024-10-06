@@ -109,3 +109,11 @@ body {
   border-radius: 5px;
   columns: white;
 }
+
+.fullpage {
+  display: flex;
+}
+.pro-selected {
+  width: 30%;
+  border: 1px solid black;
+}
