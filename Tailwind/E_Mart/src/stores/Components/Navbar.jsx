@@ -23,7 +23,7 @@ const Navbar = () => {
                     <Link to="/cart">
                     <div className="cart"> Cart 
                         <span>
-                            {c}
+                            {}
                         </span>
                     </div>
                     </Link> 
