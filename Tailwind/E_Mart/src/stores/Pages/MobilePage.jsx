@@ -12,7 +12,7 @@ const MobilePage = () => {
             setSelectedProduct(selectedProduct.filter(item => item !== mango))
         }
         else {
-            setSelectedProduct([mango])
+            setSelectedProduct([...selectedProduct, mango])
         }
     }
 
@@ -39,7 +39,7 @@ const MobilePage = () => {
                     })}
                 </div>
                 <div className="pageSection">
-                    {mobileData.map((item) => {
+                    {filteredProduct.map((item) => {
                         return (
                             <div>
                                 <Link to={`/mobiles/${item.id}`}>
