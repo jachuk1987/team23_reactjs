@@ -3,7 +3,7 @@ import { mobileData } from "../data/mobiles";
 import { useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 
-import { useCart } from "../context/CartContext";
+import { useCart } from "../Context/CartContext";
 
 const MobileSingle = () => {
   const { id } = useParams();
