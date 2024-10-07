@@ -8,7 +8,7 @@ import { useCart } from "../Context/CartContext";
 const AcSingle = () => {
   const { id } = useParams();
 
-  const {addToCart, cartItems} = useCart()
+  const { addToCart, cartItems } = useCart()
 
   const product = acData.find((item) => item.id === id);
 
@@ -32,7 +32,7 @@ const AcSingle = () => {
           <div className="ind-desc space">
             <p>{product.description}</p>
           </div>
-          <button onClick={()=>addToCart(product)}>Add to Cart</button>
+          <button onClick={() => addToCart(product)}>Add to Cart</button>
         </div>
       </div>
     </>
