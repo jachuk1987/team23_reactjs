@@ -3,7 +3,7 @@ import { acData } from "../data/ac";
 import { useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 
-import { useCart } from "..";
+import { useCart } from "../Context/CartContext";
 
 const AcSingle = () => {
   const { id } = useParams();
