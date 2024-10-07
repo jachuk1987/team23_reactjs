@@ -8,7 +8,7 @@ import { useCart } from "../Context/CartContext";
 const WomanSingle = () => {
   const { id } = useParams();
 
-  const {addToCart, cartItems} = useCart
+  const {addToCart, cartItems} = useCart()
 
   const product = womanData.find((item) => item.id === id);
 
