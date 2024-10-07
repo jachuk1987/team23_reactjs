@@ -3,7 +3,7 @@ import { fridgeData } from "../data/fridge";
 import { useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 
-import { useCart } from "..";
+import { useCart } from "../Context/CartContext";
 
 const FridgeSingle = () => {
   const { id } = useParams();
