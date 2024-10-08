@@ -6,7 +6,7 @@ import Navbar from './Context/CartContext';
 
 const UserCart = () => {
 
-    const { cartItems, addToCart, removeFromCart } = useCart()
+    const { cartItems, addToCart, removeFromCart } = 
 
     console.log(cartItems);
 
