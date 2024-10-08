@@ -3,7 +3,7 @@ import { kitchenData } from "../data/kitchen";
 import { useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 
-import { useCart } from "../context/CartContext";
+import { useCart } from "..";
 
 const KitchenSingle = () => {
   const { id } = useParams();
