@@ -1,7 +1,7 @@
 import React from "react";
 import { menData } from "../data/men";
 import { useParams } from "react-router-dom";
-import Navbar from "..";
+import Navbar from "../Components";
 
 import { useCart } from "..";
 
