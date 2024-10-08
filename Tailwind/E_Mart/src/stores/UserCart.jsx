@@ -1,6 +1,6 @@
 import React from 'react'
 import { useCart } from './Context/CartContext'
-import Navbar from '.';
+import Navbar from './Context/CartContext';
 
 
 
