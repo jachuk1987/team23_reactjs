@@ -3,7 +3,7 @@ import { menData } from "../data/men";
 import { useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 
-import { useCart } from "../Context";
+import { useCart } from "../Context/CartContext";
 
 const MenSingle = () => {
   const { id } = useParams();
