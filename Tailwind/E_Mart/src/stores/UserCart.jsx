@@ -3,7 +3,7 @@ import { useCart } from './Context/CartContext';
 import Navbar from './Components/Navbar';
 
 const UserCart = () => {
-    const { cartItems, addToCart, removeFromCart } = ;
+    const { cartItems, addToCart, removeFromCart } = useCart;
 
     return (
         <>
