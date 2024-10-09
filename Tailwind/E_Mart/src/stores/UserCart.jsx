@@ -1,5 +1,5 @@
-import React from 'react'
-import { useCart } from './Context/CartContext'
+import React from 'react';
+import { useCart } from './Context/CartContext';
 import Navbar from './Components/Navbar';
 
 
