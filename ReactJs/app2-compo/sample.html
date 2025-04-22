@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="f1"/>
+        <input type="email" name="" id="f2"/>
+        <buttontype="button" onclick="form()">submit</button>
+        <P for="" id="name"></label>
+        <P for="" id="email"></label>
+
+    </form>
+    <script>
+        function form(name,email){
+            document.getElementById("name").innerHTML=name;
+            document.getElementById("email").innerHTML=email;
+
+
+getdata();
+document.getElementById("name").innerHTML="";
+document.getElementById("email").innerHTML="";
+
+
+        }
+        function getdata(){
+            const name=document.getElementById("f1").value;
+            const email=document.getElementById("f2").value;
+            form(name,email);
+           
+        }
+   
+        
+    </script>
+    
+</body>
+</html>
